@@ -37,6 +37,9 @@ public class AppUserDAO extends JdbcDaoSupport {
     @Autowired
     private PasswordEncoder encoder;
 
+    @Autowired
+    VerificationTokenJobFactory verificationTokenJobFactory;
+
 
     @Autowired
     public AppUserDAO(DataSource dataSource) {
@@ -74,8 +77,7 @@ public class AppUserDAO extends JdbcDaoSupport {
     private void sendEmail(AppUser appUser, int indexOfNewUser) {
         String verificationToken = generateAndSaveVerificationToken(indexOfNewUser);
         // delete verification token job
-        VerificationTokenJobFactory verificationTokenJobFactory = new VerificationTokenJobFactory();
-        verificationTokenJobFactory.createAndScheduleVerificationTokenDeleteJob(verificationToken);
+        this.verificationTokenJobFactory.createAndScheduleVerificationTokenDeleteJob(verificationToken);
 
         String messageSubject = "Email verification request from Ivan Stanev";
         String confirmationUrl = "https://ivan-stanev.herokuapp.com" + "/registrationConfirm?token=" + verificationToken;

@@ -18,22 +18,17 @@ import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 @Transactional
 public class VerificationTokenJob implements Job {
 
-    @Autowired
-    private VerificationTokenDAO verificationTokenDAO;
-
-    @Autowired
-    private AppUserDAO appUserDAO;
 
     @Override
     public void execute(JobExecutionContext context) {
         String verificationToken = context.getJobDetail().getJobDataMap().getString("verificationToken");
         System.out.println("In job execute : " + verificationToken);
+        VerificationTokenDAO verificationTokenDAO = (VerificationTokenDAO) context.getMergedJobDataMap().get("VerificationTokenDAO");
         // find token id
-        //System.out.println("IS THIS NULL: " + this.verificationTokenDAO.getTokenId(verificationToken));
-        this.appUserDAO.setEnabledToTrue(new Long(1));
-        Long verificationTokenId = this.verificationTokenDAO.getTokenId(verificationToken);
+        System.out.println("IS THIS NULL: " + verificationTokenDAO.getTokenId(verificationToken));
+        Long verificationTokenId = verificationTokenDAO.getTokenId(verificationToken);
         // delete verification token from DB
-        this.verificationTokenDAO.deleteToken(verificationTokenId);
+        verificationTokenDAO.deleteToken(verificationTokenId);
     }
 
 }
