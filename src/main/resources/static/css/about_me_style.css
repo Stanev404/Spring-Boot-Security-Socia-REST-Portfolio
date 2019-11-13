@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+body {
+    background: url("../img/aboutme_background.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    padding: .8rem;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1.2em;
+}
+
+#StanevPhoto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+}
+
+#Santiago {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+}
+
+.about-me {
+    /* margin: 20px; */
+    padding: 15px;
+}
+
+.about-me h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 1px 2px 5px #b4b4b4;
+
+}
+
+.ivan-stanev h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 1px 2px 5px #b4b4b4;
+}
+
+.ivan-stanev p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.35rem;
+    text-shadow: 0px 2px 5px #b4b4b4;
+}
+
+.ivan-stanev h4 {
+    padding-top: 2rem;
+}
+
+.ivan-stanev a {
+    font-size: 4.5em;
+}
+
+.fa-github {
+    color: #000;
+}
+
+.fa-github:hover {
+    color: rgb(164, 185, 187);
+}
+
+.football {
+    padding-top: 29px;
+}
+
+.football h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 1px 2px 5px #b4b4b4;
+}
+
+.football p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.35rem;
+    text-shadow: 0px 2px 5px #b4b4b4;
+}
+
+.plovdiv h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 1px 2px 5px #b4b4b4;
+}
+
+.plovdiv {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#Plovdiv-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+}
+
+.plovdiv p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.35rem;
+    text-shadow: 0px 2px 5px #b4b4b4;
+}
+
+.form {
+    padding: 20px;
+    /* border: 1px solid #000; */
+    margin-bottom: 10px;
+    display: inline-grid;
+}
+
+#publisherName {
+    padding: 3px;
+    width: 300px;
+    text-align: center;
+}
+
+#contentOfComment {
+    padding: 3px;
+    width: 300px;
+    text-align: center;
+}
+
+textarea {
+    white-space: normal;
+    text-align: justify;
+    -moz-text-align-last: center; /* Firefox 12+ */
+    text-align-last: center;
+}
+
+.card {
+    width: 25%;
+    display: inline-block;
+}
+
+/* .about-me hr{
+  border-top: 1px solid #b4b4b4;
+  width:25%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+} */
+
+footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 2rem;
+    padding-left: 0;
+}
+
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+.to-top {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #000;
+    color: #fff;
+    padding: 9px 14px;
+    border-radius: 50%;
+}
+
+.to-top:hover {
+    background: #d7d7d7;
+    color: #000;
+}
+
+hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+h5 {
+    padding-bottom: 1rem;
+}
+
+.bottom {
+    margin-bottom: -30px;
+}
+
+hr.style-six {
+    border: none;
+    height: 2px;
+    width: 40%;
+
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    color: #222;
+    text-align: center;
+}
+
+hr.style-six-long {
+    border: none;
+    height: 2px;
+    width: 80%;
+
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    color: #222;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #StanevPhoto {
+        display: block;
+
+        width: 50%;
+        height: auto;
+    }
+
+    .about-me h2 {
+        font-size: 55px;
+
+    }
+
+    .ivan-stanev h2 {
+        font-size: 40px;
+    }
+
+    .ivan-stanev p {
+        font-size: 1.2rem;
+    }
+
+    .ivan-stanev h4 {
+        padding-top: 1.6rem;
+    }
+
+    .ivan-stanev a {
+        font-size: 4.3rem;
+    }
+
+    .football h2 {
+        font-size: 40px;
+    }
+
+    .football p {
+        font-size: 1.2rem;
+    }
+
+    .plovdiv h2 {
+        font-size: 40px;
+    }
+
+    .plovdiv p {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        width: 55%;
+    }
+
+}
+
+@media (max-width: 576px) {
+    #StanevPhoto {
+        display: block;
+
+        width: 50%;
+        height: auto;
+    }
+
+    .about-me h2 {
+        font-size: 45px;
+
+    }
+
+    .ivan-stanev h2 {
+        font-size: 30px;
+    }
+
+    .ivan-stanev p {
+        font-size: 1rem;
+    }
+
+    .ivan-stanev h4 {
+        padding-top: 1.4rem;
+    }
+
+    .ivan-stanev a {
+        font-size: 4rem;
+    }
+
+    .football h2 {
+        font-size: 30px;
+    }
+
+    .football p {
+        font-size: 1rem;
+    }
+
+    .plovdiv h2 {
+        font-size: 30px;
+    }
+
+    .plovdiv p {
+        font-size: 1rem;
+    }
+
+    .card {
+        width: 80%;
+    }
+}

@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!--<audio th:src="@{audio/ThePinkPantherJazz.mp3}" id="backgroundMusic" autoplay hidden loop controls="controls"-->
+           <!--onloadeddata="setHalfVolume()">-->
+    <!--</audio>-->
+    <link rel="icon" href="https://img.icons8.com/metro/1600/source-code.png">
+    <script th:src="@{js/post_email_request.js}"></script>
+    <script th:src="@{js/script.js}"></script>
+    <link th:href="@{css/contacts_style.css}" rel="stylesheet">
+
+</head>
+<body>
+
+<!--Navigation-->
+<header th:insert="fragments/menu.html :: menu"> </header>
+
+<!--Main Content-->
+<div class="container-fluid">
+<div style="width:320px; margin:0 auto; padding-top: 25px;">
+    <div class="row">
+        <div class="col-12">
+            <img class="image-resize" th:src="@{img/contact-me.png}" alt="Contact me">
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="container">
+    <form id="contact">
+        <h3>Quick Contact</h3>
+        <h4>Contact me today, and get reply with in 24 hours!</h4>
+        <fieldset>
+            <input type="text" tabindex="1" name="name" id="name" th:value="${userName}" disabled style="font-weight: bold;">
+            <p class="error" id="name_error"></p>
+        </fieldset>
+        <fieldset>
+            <input type="text" tabindex="2" name="email" id="email" th:value="${email}" disabled style="font-weight: bold;">
+            <p class="error" id="email_error"></p>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Your Phone Number" type="text" name="phone" id="phone" tabindex="3" >
+            <p class="error" id="phone_error"></p>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Subject" type="text" name="subject" id="subject" tabindex="4" >
+            <p class="error" id="subject_error"></p>
+        </fieldset>
+        <fieldset>
+            <textarea placeholder="Type your Message Here...." type="text" name="message" id="message"  tabindex="5" ></textarea>
+            <p class="error" id="message_error"></p>
+        </fieldset>
+
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+        <p id="success_message">
+        </p>
+    </form>
+</div>
+
+<div class = "container-fluid">
+    <div class= "row text-center connect">
+        <div class = "col-md-4 col-xs-12">
+            <h1 class="display-4">Connect</h1>
+        </div>
+        <div class = "col-md-4 col-xs-12">
+            <h1 class="display-4">Via</h1>
+        </div>
+        <div class = "col-md-4 col-xs-12">
+            <h1 class="display-4">Socials</h1>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class= "row text-center connect">
+        <div class="col-xs-12 col-sm-6 col-md-3 social">
+
+        <a href="https://www.facebook.com/ivan.stanev.716"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 social">
+
+        <a href="https://twitter.com/staneeev1"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 social">
+
+        <a href="https://www.instagram.com/stan_lpfc/"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 social">
+
+        <a href="https://www.youtube.com/user/stanev123"><i class="fab fa-youtube"></i></a>
+        </div>
+        </div>
+    </div>
+
+
+
+<!--Footer-->
+    <div th:insert="fragments/footer.html :: footer"> </div>
+
+</body>
+</html>

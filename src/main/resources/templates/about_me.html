@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About me</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!--<audio th:src="@{audio/ThePinkPantherJazz.mp3}" id="backgroundMusic" autoplay hidden loop controls="controls"-->
+           <!--onloadeddata="setHalfVolume()">-->
+    <!--</audio>-->
+
+    <link rel="icon" href="https://img.icons8.com/metro/1600/source-code.png">
+    <script th:src="@{js/script.js}"></script>
+    <script th:src="@{js/post_comment_request.js}"></script>
+    <script th:src="@{js/get_all_comments_request.js}"></script>
+    <link rel="stylesheet"
+          href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link th:href="@{css/about_me_style.css}" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<header th:insert="fragments/menu.html :: menu"> </header>
+
+<!--Main Content-->
+
+<div class="container-fluid">
+    <div class="row about-me">
+        <div class="col-12">
+
+            <h2 class="display-4 text-center"><strong>About Me</strong></h2>
+            <hr class="style-six"/>
+        </div>
+    </div>
+    <div class="row ivan-stanev">
+        <div class="col-md-6  text-center">
+            <h2 class="display-4">Ivan Stanev</h2>
+            <p>
+                Hi, my name is Ivan Stanev and I'm from the city of Plovdiv. Currently I am 22 years old and I'm in my
+                third year of studies towards a bachelor's in Computer Science at New Bulgarian University, Sofia. Some
+                of my hobbies
+                are going to the gym, playing football, travelling and my favourite one <b>programming</b>. I have
+                studied the fundamentals of object-oriented programming with <b>C++</b> for the past year but now I'm
+                working on <b>Java</b> and <b>Python</b> applications. Thus I have basic knowledge in <b>HTML</b>, <b>CSS</b>
+                and <b>JavaScript</b> gained in high school and the university. You can click the <b>GitHub</b> icon
+                below this text in case you want to see how I code. At the moment I am looking for an internship during
+                the summer.
+            </p>
+            <h4>GitHub</h4>
+            <a href="https://github.com/Stanev404"><i class="fab fa-github"></i></a>
+        </div>
+
+        <div class="col-md-6 text-center">
+            <img src="img/me.jpg" class="img-fluid rounded border border-secondary" width="400" height="400"
+                 alt="ivan stanev photo" id="StanevPhoto">
+            <p style="font-style: italic; font-size: 1rem;padding-top:.5rem;">
+                <b>Golden Gate Bridge, USA </b>  2019
+            </p>
+        </div>
+    </div>
+    <hr class="style-six-long"/>
+    <div class="row football">
+        <div class="col-md-6 text-center">
+            <img src="img/santiago_bernabue.jpg" class="img-fluid border border-secondary" width="400" height="400"
+                 alt="santiago bernabue " id="Santiago">
+            <p style="font-style: italic; font-size: 1rem;padding-top:.5rem;">
+                <b>Santiago Bernabue, Madrid</b> 2017
+            </p>
+        </div>
+
+        <div class="col-md-6 text-center ">
+            <h2 class="display-4">Football</h2>
+            <p>
+                Like I mentioned above footbal is one of my hobbies. I have been both playing and watching football
+                since I was a kid. My favourite football teams are Chelsea FC, PFC Lokomotiv Plovdiv but mainly <b>FC
+                Real Madrid</b>. I have been supporting them for more than <b>15</b> years and a dream of mine
+                is to visit <b>Santiago Bernabue</b> in Madrid. The players that I enjoy watching the most are <b>Sergio
+                Ramos</b>, <b>Luka Modric</b>, <b>Toni Kroos</b> and <b>Cristiano Ronaldo</b>. For the past 5 years
+                Madridistas have won many thropies including <b>4 Champions Leagues</b> and <b>1 La Liga</b>.
+            </p>
+        </div>
+
+        <hr class="style-six-long"/>
+
+
+    </div>
+
+    <div class="row plovdiv">
+        <div class="col-md-6 text-center">
+            <h2 class="display-4">Plovdiv</h2>
+            <p>
+                This is my hometown and every week I am able to come back to it from Sofia and visit my parents house.
+                Plovdiv is also one of the World’s most ancient cities and Europe’s oldest inhabited city — even beating
+                Athens. Plovdiv is all in one: a Thracian and classical <b>Greek polis</b>, the pride of <b>Philip of
+                Macedon</b>, the capital of Thrace under the <b>Roman Empire</b>, a centre of <b>Byzantinism</b>, a
+                stronghold of the <b>Bulgarians</b>, a dream of the crusaders - a magnificent, wealth and most important
+                city. Kendros, Eumolpia, Philippopolis, Pulpudeva, Thrimonzium, Pulden, Populdin, Ploudin, Filibe —
+                those were the ancient names of Plovdiv throughout its <b>6000</b> to <b>8000</b> years of existence.
+                The name Plovdiv first appeared in <b>15 century</b> documents and has remained till today.
+            </p>
+        </div>
+
+        <div class="col-md-6 text-center">
+            <img src="img/plovdiv.jpg" class="img-fluid border border-secondary" width="550" height="400"
+                 alt="plovdiv city" id="Plovdiv-photo">
+            <p style="font-style: italic; font-size: 1rem;padding-top:.5rem;">
+                City of <b>Plovdiv</b>, 2017
+            </p>
+        </div>
+    </div>
+
+
+<div class="row">
+    <div class="col-12 about-me">
+
+        <h2 class="display-4 text-center"><strong>Comments</strong></h2>
+        <hr class="style-six"/>
+    </div>
+</div>
+
+<div class="row text-center">
+    <div class="col-12">
+
+
+        <form id="commentForm">
+            <div class="form">
+                <label for="publisherName">Name</label>
+
+                <input type="text" id="publisherName" name="publisherName" th:value="${userName}" disabled style="font-weight: bold;"/>
+
+                <label for="contentOfComment">Your comment</label>
+
+                <textarea class="form-control" id="contentOfComment" name="contentOfComment" cols="20" rows="3"
+                          placeholder="Your comment.."></textarea>
+
+                <button type="submit" class="btn btn-success btn-lg" style="margin-top: 20px;">Submit</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="emptyComment" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Empty comment</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Your comment cannot be empty!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"  onclick="alert('You must say sorry for doing that :\ ')">Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Ok, sorry</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Modal -->
+        </form>
+    </div>
+
+</div>
+
+<div class="row text-center">
+    <div class="col-12" id="comment-container">
+
+    </div>
+</div>
+</div>
+
+<!--- Footer -->
+<div th:insert="fragments/footer.html :: footer"> </div>
+
+
+</body>
+</html>

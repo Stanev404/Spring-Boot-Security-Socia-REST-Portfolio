@@ -1,0 +1,32 @@
+0000000000000000000000000000000000000000 afe67a1029c12876a46bcd90d2970ce69af4dc0b Ivan Stanev <zirow0000@gmail.com> 1551912097 +0200	clone: from https://git.heroku.com/ivan-stanev.git
+afe67a1029c12876a46bcd90d2970ce69af4dc0b afe67a1029c12876a46bcd90d2970ce69af4dc0b Ivan Stanev <zirow0000@gmail.com> 1551912557 +0200	reset: moving to HEAD
+afe67a1029c12876a46bcd90d2970ce69af4dc0b afe67a1029c12876a46bcd90d2970ce69af4dc0b Ivan Stanev <zirow0000@gmail.com> 1551912562 +0200	reset: moving to HEAD
+afe67a1029c12876a46bcd90d2970ce69af4dc0b afe67a1029c12876a46bcd90d2970ce69af4dc0b Ivan Stanev <zirow0000@gmail.com> 1551912630 +0200	reset: moving to HEAD
+afe67a1029c12876a46bcd90d2970ce69af4dc0b 201bc70c5b3cd566391a29a627e0d7f9d1e43ee5 Ivan Stanev <zirow0000@gmail.com> 1551912806 +0200	commit: idk
+201bc70c5b3cd566391a29a627e0d7f9d1e43ee5 afe67a1029c12876a46bcd90d2970ce69af4dc0b Ivan Stanev <zirow0000@gmail.com> 1551913060 +0200	reset: moving to HEAD~1
+afe67a1029c12876a46bcd90d2970ce69af4dc0b afe67a1029c12876a46bcd90d2970ce69af4dc0b Ivan Stanev <zirow0000@gmail.com> 1551913064 +0200	reset: moving to HEAD
+afe67a1029c12876a46bcd90d2970ce69af4dc0b d693e71b854af059cbac0edad6f0fba4c52bf7e7 Ivan Stanev <zirow0000@gmail.com> 1551913239 +0200	checkout: moving from master to d693e71b854af059cbac0edad6f0fba4c52bf7e7
+d693e71b854af059cbac0edad6f0fba4c52bf7e7 79a3cc2c7d8d9349c31fab4c669e3588bcaef578 Ivan Stanev <zirow0000@gmail.com> 1551913415 +0200	commit: working copy with pass
+79a3cc2c7d8d9349c31fab4c669e3588bcaef578 d693e71b854af059cbac0edad6f0fba4c52bf7e7 Ivan Stanev <zirow0000@gmail.com> 1551913527 +0200	checkout: moving from 79a3cc2c7d8d9349c31fab4c669e3588bcaef578 to old-state
+d693e71b854af059cbac0edad6f0fba4c52bf7e7 afe67a1029c12876a46bcd90d2970ce69af4dc0b Ivan Stanev <zirow0000@gmail.com> 1551913544 +0200	checkout: moving from old-state to master
+afe67a1029c12876a46bcd90d2970ce69af4dc0b ba9ac4447a634308ab00ee05fd2357ffb4d41a33 Ivan Stanev <zirow0000@gmail.com> 1551915461 +0200	commit: test release before bed
+ba9ac4447a634308ab00ee05fd2357ffb4d41a33 24cc28f5b23ad4e29b9e02c20b1620f81c1c21cd Ivan Stanev <zirow0000@gmail.com> 1552325817 +0200	pull heroku master: Fast-forward
+24cc28f5b23ad4e29b9e02c20b1620f81c1c21cd 3b588b6b79322553e50fdef3877d3e1c89626f7c Ivan Stanev <zirow0000@gmail.com> 1552340540 +0200	commit: facebook login
+3b588b6b79322553e50fdef3877d3e1c89626f7c 521f287c36d4e64cc24753171a99a0bff7399206 Ivan Stanev <zirow0000@gmail.com> 1552342986 +0200	commit: facebook #_-_ append to link feature fixed
+521f287c36d4e64cc24753171a99a0bff7399206 9e4ef659a5669515f643db7345afe5847125f854 Ivan Stanev <zirow0000@gmail.com> 1552398704 +0200	commit: trying to fix fb login
+9e4ef659a5669515f643db7345afe5847125f854 b4d5a30d3dfc41527d8a4f530518b632e1c716f3 Ivan Stanev <zirow0000@gmail.com> 1552399136 +0200	commit: trying to fix fb login
+b4d5a30d3dfc41527d8a4f530518b632e1c716f3 ad983b538009a30755c997a7d12d9e123cb3e01b Ivan Stanev <zirow0000@gmail.com> 1552401778 +0200	commit: set db encoding to utf8
+ad983b538009a30755c997a7d12d9e123cb3e01b 1b78a0cc21ef89361cd9a4fbaffb052281043bef Ivan Stanev <zirow0000@gmail.com> 1552403794 +0200	commit: set db encoding to utf8
+1b78a0cc21ef89361cd9a4fbaffb052281043bef ffcd0952bfbe341d16e0a1f8054f50b38a8c8ca2 Ivan Stanev <zirow0000@gmail.com> 1552411453 +0200	commit: remove db insert
+ffcd0952bfbe341d16e0a1f8054f50b38a8c8ca2 4b16dfc35d4db4a3d3be0eabfd7219c027da7a4f Ivan Stanev <zirow0000@gmail.com> 1552466589 +0200	commit: updated login css fb div
+4b16dfc35d4db4a3d3be0eabfd7219c027da7a4f f815405dc15381e944bb790cd16a5ad0f8d845e4 Ivan Stanev <zirow0000@gmail.com> 1552483531 +0200	commit: added google file for google search
+f815405dc15381e944bb790cd16a5ad0f8d845e4 229b668259fd9c4f3d1cb076e8a8c1aa100f0e0e Ivan Stanev <zirow0000@gmail.com> 1552483673 +0200	commit: added google in index for google search
+229b668259fd9c4f3d1cb076e8a8c1aa100f0e0e 77a295a1c476913ba81bfb451d7770adbef75b10 Ivan Stanev <zirow0000@gmail.com> 1552483768 +0200	commit: added google file for google search
+77a295a1c476913ba81bfb451d7770adbef75b10 dc50c5f57a0c94ce2370b63997733bb70a6a9d01 Ivan Stanev <zirow0000@gmail.com> 1552508362 +0200	commit: about_me background set, input to bootstrap migrated
+dc50c5f57a0c94ce2370b63997733bb70a6a9d01 00205505030491326f6c223609d42df696cf8f7c Ivan Stanev <zirow0000@gmail.com> 1571061247 +0300	pull heroku master: Fast-forward
+00205505030491326f6c223609d42df696cf8f7c aaecb6880117c70c38d343cb6ebb5618f9d53fdd Ivan Stanev <zirow0000@gmail.com> 1571063540 +0300	commit: testing
+aaecb6880117c70c38d343cb6ebb5618f9d53fdd 35913b4c629409a739774a5183c9ebdf3a266428 Ivan Stanev <zirow0000@gmail.com> 1571237162 +0300	commit: hibernate tables set to update mode
+35913b4c629409a739774a5183c9ebdf3a266428 9810ff8272bb9da448e680cedb9d001cd83c5bf2 Ivan Stanev <zirow0000@gmail.com> 1572536680 +0200	pull heroku master: Fast-forward
+9810ff8272bb9da448e680cedb9d001cd83c5bf2 19e4d7f4dea16c115962b34b6b2a676109885236 Ivan Stanev <zirow0000@gmail.com> 1573146870 +0200	commit: added menu and footer fragments
+19e4d7f4dea16c115962b34b6b2a676109885236 19e4d7f4dea16c115962b34b6b2a676109885236 Ivan Stanev <zirow0000@gmail.com> 1573412587 +0200	checkout: moving from master to development
+19e4d7f4dea16c115962b34b6b2a676109885236 19e4d7f4dea16c115962b34b6b2a676109885236 Ivan Stanev <zirow0000@gmail.com> 1573412745 +0200	checkout: moving from development to development

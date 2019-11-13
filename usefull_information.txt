@@ -1,0 +1,10 @@
+To see bulgarian names in DB:
+Run this in cmd:
+	chcp 65001 
+	heroku pg:psql 
+	set client_encoding to "utf-8";
+How to restore DB using back up:
+	heroku pg:backups:restore b001 DATABASE_URL --app ivan-stanev
+Enter DB:
+	heroku pg:psql --app ivan-stanev
+	\dt - show all tables	

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="menu">
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img th:src="@{img/stanev2.png}" alt="stanev-logo"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" th:classappend="${#httpServletRequest.getRequestURI() == '/index' ? 'active':''}">
+                    <a class="nav-link" href="index">Home</a>
+                </li>
+                <li class="nav-item" th:classappend="${#httpServletRequest.getRequestURI() == '/about_me' ? 'active':''}">
+                    <a class="nav-link" href="about_me">About Me</a>
+                </li>
+                <li class="nav-item" th:classappend="${#httpServletRequest.getRequestURI() == '/contacts' ? 'active':''}">
+                    <a class="nav-link" href="contacts">Contacts</a>
+                </li>
+
+                <li><form action="/logout" method="post">
+                    <button type="submit" class="btn btn-dark nav-link">Log off</button>
+                </form></li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+</body>
+</html>
