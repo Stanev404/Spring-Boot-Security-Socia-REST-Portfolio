@@ -58,7 +58,13 @@ body {
     text-shadow: 1px 2px 5px #b4b4b4;
 
 }
-
+.opacity{
+    background-image: url("../img/aboutme_background_blur.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: -20px -20px 50px black, 20px 20px 50px black;
+}
 .ivan-stanev h2 {
     font-family: 'Rubik', sans-serif;
     font-size: 70px;
