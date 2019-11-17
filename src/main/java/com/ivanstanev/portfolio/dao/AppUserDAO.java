@@ -129,6 +129,15 @@ public class AppUserDAO extends JdbcDaoSupport {
         return indexOfNewUser;
     }
 
+    public void deleteUserFromAppUserTable(Long userId){
+        String deleteQueryForUserRole = "DELETE FROM USER_ROLE WHERE user_id = ?";
+        String deleteQeuryForVerificationToken = "DELETE FROM VERIFICATION_TOKEN WHERE user_id = ?";
+        String deleteQueryForAppUser = "DELETE FROM APP_USER WHERE user_id = ?";
+        this.getJdbcTemplate().update(deleteQueryForUserRole,userId);
+        this.getJdbcTemplate().update(deleteQeuryForVerificationToken,userId);
+        this.getJdbcTemplate().update(deleteQueryForAppUser,userId);
+    }
+
     public void saveFacebookAccount(Map<String, String> facebookMap) {
         String facebookEmail = facebookMap.get("email");
         String facebookName = facebookMap.get("name");

@@ -7,4 +7,7 @@ How to restore DB using back up:
 	heroku pg:backups:restore b001 DATABASE_URL --app ivan-stanev
 Enter DB:
 	heroku pg:psql --app ivan-stanev
-	\dt - show all tables	
+	\dt - show all tables
+Show logs:
+    heroku logs -n 200 - show past 200 logs
+    heroku logs --tail - show runtime logs

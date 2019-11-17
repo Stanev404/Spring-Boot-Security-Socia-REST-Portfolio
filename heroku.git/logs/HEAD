@@ -30,3 +30,8 @@ aaecb6880117c70c38d343cb6ebb5618f9d53fdd 35913b4c629409a739774a5183c9ebdf3a26642
 9810ff8272bb9da448e680cedb9d001cd83c5bf2 19e4d7f4dea16c115962b34b6b2a676109885236 Ivan Stanev <zirow0000@gmail.com> 1573146870 +0200	commit: added menu and footer fragments
 19e4d7f4dea16c115962b34b6b2a676109885236 19e4d7f4dea16c115962b34b6b2a676109885236 Ivan Stanev <zirow0000@gmail.com> 1573412587 +0200	checkout: moving from master to development
 19e4d7f4dea16c115962b34b6b2a676109885236 19e4d7f4dea16c115962b34b6b2a676109885236 Ivan Stanev <zirow0000@gmail.com> 1573412745 +0200	checkout: moving from development to development
+19e4d7f4dea16c115962b34b6b2a676109885236 19e4d7f4dea16c115962b34b6b2a676109885236 Ivan Stanev <ivan.stanev@paysafe.com> 1573921716 +0200	checkout: moving from development to master
+19e4d7f4dea16c115962b34b6b2a676109885236 de5f5adfe638b7988c46b7ea0abc7975ffc742cc Ivan Stanev <ivan.stanev@paysafe.com> 1573921739 +0200	commit: new changes
+de5f5adfe638b7988c46b7ea0abc7975ffc742cc 566c21977ee70fbabe8cee1f68345a6b09889a24 Ivan Stanev <ivan.stanev@paysafe.com> 1573994089 +0200	commit: delete user from usertable
+566c21977ee70fbabe8cee1f68345a6b09889a24 4de3a7d6b2aeb3ac730cdd73a32a8608d92e59c5 Ivan Stanev <ivan.stanev@paysafe.com> 1573994317 +0200	commit: delete user from usertable
+4de3a7d6b2aeb3ac730cdd73a32a8608d92e59c5 8e589878cccf7e00d5c018d3ad66396245283dee Ivan Stanev <ivan.stanev@paysafe.com> 1573994719 +0200	commit: 30 minutes
