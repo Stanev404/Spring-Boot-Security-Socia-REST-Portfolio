@@ -37,18 +37,4 @@ public class VerificationTokenDAO extends JdbcDaoSupport {
         String sql = "DELETE FROM verification_token WHERE token_id=" + verificationTokenId + ";";
         this.getJdbcTemplate().update(sql);
     }
-
-    public Long getTokenId(String verificationToken) {
-        String sql = "SELECT token_id FROM verification_token WHERE token=\'" + verificationToken + "\';";
-        Long tokenId;
-        tokenId = this.getJdbcTemplate().queryForObject(sql,Long.class);
-        return tokenId;
-    }
-
-    public Long getUserId(Long tokenId){
-        String sql = "SELECT user_id FROM verification_token WHERE token_id=\'" + tokenId + "\';";
-        Long userId;
-        userId = this.getJdbcTemplate().queryForObject(sql,Long.class);
-        return userId;
-    }
 }

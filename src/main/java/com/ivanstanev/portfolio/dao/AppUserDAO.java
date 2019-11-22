@@ -5,7 +5,6 @@ import javax.sql.DataSource;
 import com.ivanstanev.portfolio.entity.auth.AppUser;
 import com.ivanstanev.portfolio.mapper.AppUserMapper;
 import com.ivanstanev.portfolio.service.gmail.GmailService;
-import com.ivanstanev.portfolio.service.job.VerificationTokenJobFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.dao.EmptyResultDataAccessException;
@@ -36,9 +35,6 @@ public class AppUserDAO extends JdbcDaoSupport {
 
     @Autowired
     private PasswordEncoder encoder;
-
-    @Autowired
-    VerificationTokenJobFactory verificationTokenJobFactory;
 
 
     @Autowired
@@ -76,9 +72,6 @@ public class AppUserDAO extends JdbcDaoSupport {
 
     private void sendEmail(AppUser appUser, int indexOfNewUser) {
         String verificationToken = generateAndSaveVerificationToken(indexOfNewUser);
-        // delete verification token job
-        this.verificationTokenJobFactory.createAndScheduleVerificationTokenDeleteJob(verificationToken);
-
         String messageSubject = "Email verification request from Ivan Stanev";
         String confirmationUrl = "https://ivan-stanev.herokuapp.com" + "/registrationConfirm?token=" + verificationToken;
         String message = "Hey " + appUser.getName() + ",\n" + "\n" +
@@ -127,15 +120,6 @@ public class AppUserDAO extends JdbcDaoSupport {
                 this.encoder.encode(appUser.getEncrytedPassword()),
                 appUser.getEnabled());
         return indexOfNewUser;
-    }
-
-    public void deleteUserFromAppUserTable(Long userId){
-        String deleteQueryForUserRole = "DELETE FROM USER_ROLE WHERE user_id = ?";
-        String deleteQeuryForVerificationToken = "DELETE FROM VERIFICATION_TOKEN WHERE user_id = ?";
-        String deleteQueryForAppUser = "DELETE FROM APP_USER WHERE user_id = ?";
-        this.getJdbcTemplate().update(deleteQueryForUserRole,userId);
-        this.getJdbcTemplate().update(deleteQeuryForVerificationToken,userId);
-        this.getJdbcTemplate().update(deleteQueryForAppUser,userId);
     }
 
     public void saveFacebookAccount(Map<String, String> facebookMap) {
